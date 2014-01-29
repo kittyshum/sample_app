@@ -27,5 +27,8 @@ module SampleApp
 
     # As of Rails 4.0 - need to add this line to make bootstrap-sass compatible with asset pipeline
     config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
+
+    #to get ride of the locale warning
+    I18n.enforce_available_locales = true
   end
 end
