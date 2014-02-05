@@ -1,6 +1,10 @@
 SampleApp::Application.routes.draw do
 
-  get "users/new"
+  #get "users/new"
+  resources :users
+  # see listing 7.3  replaces "users/new"
+
+
   # hard coded get paths
   #get "static_pages/home"
   #get "static_pages/help"
